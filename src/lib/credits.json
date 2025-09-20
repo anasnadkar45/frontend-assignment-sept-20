@@ -1,0 +1,294 @@
+[
+  {
+    "unic_id": "UNIC-VCS-IND-2023-4F7A8C1B",
+    "project_name": "Mangrove Restoration Project",
+    "vintage": 2023,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2022-8A1B2C3D",
+    "project_name": "Solar Power Plant Maharashtra",
+    "vintage": 2022,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-9D4E7F8G",
+    "project_name": "Wind Farm Rajasthan",
+    "vintage": 2021,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2020-1A2B3C4D",
+    "project_name": "Biogas Energy Punjab",
+    "vintage": 2020,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2019-6B7C8D9E",
+    "project_name": "Hydro Dam Uttarakhand",
+    "vintage": 2019,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2023-7C8D9E0F",
+    "project_name": "Solar Rooftops Delhi",
+    "vintage": 2023,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-8E9F0A1B",
+    "project_name": "Agroforestry Karnataka",
+    "vintage": 2021,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2022-9F0A1B2C",
+    "project_name": "Cookstove Distribution Bihar",
+    "vintage": 2022,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2020-0B1C2D3E",
+    "project_name": "Reforestation Assam",
+    "vintage": 2020,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2018-1C2D3E4F",
+    "project_name": "Waste-to-Energy Gujarat",
+    "vintage": 2018,
+    "status": "Retired"
+  },
+
+  {
+    "unic_id": "UNIC-VCS-IND-2024-2A3B4C5D",
+    "project_name": "Solar Park Rajasthan",
+    "vintage": 2024,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2023-3C4D5E6F",
+    "project_name": "Wind Turbines Tamil Nadu",
+    "vintage": 2023,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2022-4D5E6F7G",
+    "project_name": "Biogas Digester Madhya Pradesh",
+    "vintage": 2022,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-5E6F7G8H",
+    "project_name": "Organic Farming Kerala",
+    "vintage": 2021,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2020-6F7G8H9I",
+    "project_name": "Clean Water Project Odisha",
+    "vintage": 2020,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2019-7G8H9I0J",
+    "project_name": "Energy Efficiency Chandigarh",
+    "vintage": 2019,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2018-8H9I0J1K",
+    "project_name": "Solar Pumps Haryana",
+    "vintage": 2018,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2017-9I0J1K2L",
+    "project_name": "Microgrid Nagaland",
+    "vintage": 2017,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2016-0J1K2L3M",
+    "project_name": "Forest Conservation Himachal Pradesh",
+    "vintage": 2016,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2015-1K2L3M4N",
+    "project_name": "LED Lighting Program Goa",
+    "vintage": 2015,
+    "status": "Active"
+  },
+
+  {
+    "unic_id": "UNIC-VCS-IND-2024-2K3L4M5N",
+    "project_name": "Solar Streetlights Delhi",
+    "vintage": 2024,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2023-3L4M5N6O",
+    "project_name": "Hydro Plant Sikkim",
+    "vintage": 2023,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2022-4M5N6O7P",
+    "project_name": "CNG Buses Mumbai",
+    "vintage": 2022,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-5N6O7P8Q",
+    "project_name": "Community Solar Uttar Pradesh",
+    "vintage": 2021,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2020-6O7P8Q9R",
+    "project_name": "Eco-Brick Nepal Border",
+    "vintage": 2020,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2019-7P8Q9R0S",
+    "project_name": "Fuel-Efficient Stoves Jharkhand",
+    "vintage": 2019,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2018-8Q9R0S1T",
+    "project_name": "Wind-Solar Hybrid Gujarat",
+    "vintage": 2018,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2017-9R0S1T2U",
+    "project_name": "Afforestation Project Manipur",
+    "vintage": 2017,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2016-0S1T2U3V",
+    "project_name": "Solar Lantern Program Tripura",
+    "vintage": 2016,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2015-1T2U3V4W",
+    "project_name": "Hydro Micro Station Meghalaya",
+    "vintage": 2015,
+    "status": "Retired"
+  },
+
+  {
+    "unic_id": "UNIC-VCS-IND-2024-2T3U4V5W",
+    "project_name": "Carbon Farming Andhra Pradesh",
+    "vintage": 2024,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2023-3U4V5W6X",
+    "project_name": "Smart Grid Kerala",
+    "vintage": 2023,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2022-4V5W6X7Y",
+    "project_name": "Solar Water Heaters Pune",
+    "vintage": 2022,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-5W6X7Y8Z",
+    "project_name": "Wind Energy Tamil Nadu",
+    "vintage": 2021,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2020-6X7Y8Z9A",
+    "project_name": "Clean Cooking Gas Rajasthan",
+    "vintage": 2020,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2019-7Y8Z9A0B",
+    "project_name": "Water Harvesting Madhya Pradesh",
+    "vintage": 2019,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2018-8Z9A0B1C",
+    "project_name": "Organic Fertilizer Tamil Nadu",
+    "vintage": 2018,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2017-9A0B1C2D",
+    "project_name": "Bamboo Plantation Nagaland",
+    "vintage": 2017,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2016-0B1C2D3E",
+    "project_name": "Solar Schools Bihar",
+    "vintage": 2016,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2015-1C2D3E4F",
+    "project_name": "Green Housing Karnataka",
+    "vintage": 2015,
+    "status": "Active"
+  },
+
+  {
+    "unic_id": "UNIC-VCS-IND-2024-2D3E4F5G",
+    "project_name": "Floating Solar Kerala",
+    "vintage": 2024,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2023-3E4F5G6H",
+    "project_name": "Biochar Program Odisha",
+    "vintage": 2023,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2022-4F5G6H7I",
+    "project_name": "Waste Management Delhi",
+    "vintage": 2022,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2021-5G6H7I8J",
+    "project_name": "Recycling Plant Gujarat",
+    "vintage": 2021,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2020-6H7I8J9K",
+    "project_name": "Climate-Smart Irrigation Telangana",
+    "vintage": 2020,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-ACR-IND-2019-7I8J9K0L",
+    "project_name": "Eco Tourism Kerala",
+    "vintage": 2019,
+    "status": "Retired"
+  },
+  {
+    "unic_id": "UNIC-VCS-IND-2018-8J9K0L1M",
+    "project_name": "Biodiversity Project Arunachal Pradesh",
+    "vintage": 2018,
+    "status": "Active"
+  },
+  {
+    "unic_id": "UNIC-GS-IND-2017-9K0L1M2N",
+    "project_name": "Green Metro Delhi",
+    "vintage": 2017,
+    "status": "Retired"
+  }
+]

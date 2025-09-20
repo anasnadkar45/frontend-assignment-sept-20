@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/global/Sidebar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/ModeToggle";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +31,26 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex gap-4 p-4 h-screen bg-secondary">
+            <Sidebar />
+            <main className="flex-1 h-full border rounded-xl bg-background/50">
+            <ScrollArea className="h-full">
+              {children}
+            </ScrollArea>
+            </main>
+            <div className="absolute right-7 top-7">
+              <ModeToggle />
+            </div>
+          </div>
+
+
+        </ThemeProvider>
       </body>
     </html>
   );
