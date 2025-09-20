@@ -46,7 +46,7 @@ const CreditsDashboard = () => {
     const [order, setOrder] = useState("")
 
     const total = sortedCredits.length
-    let perPage = 9
+    const perPage = 9
     const totalPage = Number((total / perPage).toFixed())
     const lastPage = totalPage > total / perPage ? totalPage : totalPage + 1
 
