@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Carbon Credit Dashboard – Offset Frontend Assignment
 
-## Getting Started
+This project is a **Carbon Credit Dashboard** built with **Next.js 15 (Turbopack)** as part of the frontend assignment for **Offset**.  
 
-First, run the development server:
+The dashboard allows users to **search, filter, view details, and download retirement certificates** for carbon credits, ensuring transparency and trust in carbon offsetting.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Assignment Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As we know, the world is polluted because people and companies emit CO2 on a daily basis. To regulate this, **carbon credits** were created.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **1 carbon credit = 1 ton of CO2 offset or prevented.**  
+- Companies buy carbon credits to offset their emissions.  
+- Offset ensures every carbon credit has a clear life cycle: **created → sold → retired**.  
 
-## Learn More
+### Task
+Build a **dashboard** where users can:
 
-To learn more about Next.js, take a look at the following resources:
+- Display credits from a JSON file (fields: `unic_id`, `project_name`, `vintage`, `status`).
+- Show **status badges**:
+  - 🟢 **Active** = Green badge  
+  - ⚪ **Retired** = Gray badge  
+- Add a **search/filter bar** (by project name or vintage).
+- Provide a button: **“Download Retirement Certificate”**.  
+  - The certificate should include **UNIC ID, project name, vintage, status, and timestamp**.  
+  - Users should be able to download as **HTML or PDF**.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
 
-## Deploy on Vercel
+- **Framework**: [Next.js 15](https://nextjs.org/)  
+- **UI Components**: [ShadCN](https://ui.shadcn.com/)  
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)  
+- **Icons**: [Lucide React](https://lucide.dev/)  
+- **PDF Export**: [jsPDF](https://github.com/parallax/jsPDF)  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anasnadkar45/frontend-assignment-sept-20.git
+   cd frontend-assignment-sept-20
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the project locally:
+   ```bash
+   npm run dev
+   ```
+
+4. Open in browser:
+   ```
+   http://localhost:3000
+   ```
+
+5. Build for production:
+   ```bash
+   npm run build
+   npm start
+   ```
+
+---
+
+## 📝 Reflection Questions & Answers
+
+### ❓ How did you decide what to show on the main page vs details?
+
+First, I collected all the information required for the dashboard. Then I visited **Dribbble** for design inspiration and finalized one design from there. I decided what and how much to display on the page based on this design.  
+
+Since there wasn't much data in the JSON, I displayed it directly on the UI in two formats: **cards** and a **list table**.  
+This gives users two options to view the data.  
+
+When users click the **download button**, I show a modal with download options like **HTML** and **PDF**.
+
+---
+
+### 🎨 What design choices did you make to keep it clean?
+
+To keep the design clean, I followed several principles:
+
+- **Consistent Color Scheme**: Maintained visual harmony throughout the dashboard.  
+- **Clear Sections & Spacing**: Organized data with proper spacing to prevent clutter.  
+- **Minimal Typography**: Limited to 2-3 font sizes/weights for hierarchy.  
+- **Cards & Lists**: Used subtle shadows and borders to separate components without overwhelming the UI.  
+- **White Space**: Strategically applied to let the content breathe.  
+- **Grid Alignment**: Ensured readability and consistency across layouts.  
+
+---
+
+### ⚡ If the system had 10,000 credits, how would you keep the dashboard fast?
+
+To ensure performance and scalability:
+
+1. **Avoid fetching all 10,000 credits at once.**  
+   - Implement **server-side pagination** (20–50 records per request).  
+   - Reduces load time and memory usage.  
+
+2. **Smooth Loading Experience.**  
+   - Use **React Suspense** with fallback skeleton loaders.  
+   - Provide visual feedback while data is loading.  
+
+3. **Optimized Search.**  
+   - Apply **debouncing** (300–500ms) to reduce unnecessary API calls.  
+   - Use **throttling** for continuous events like scrolling.  
+
+4. **Virtual Scrolling.**  
+   - Render only visible list items at any given time.  
+   - Enhances performance when handling thousands of records.  
+
+5. **Caching Strategies.**  
+   - Store previously fetched data to avoid redundant network requests.  
+   - Improves navigation speed and reduces server load.  
+
+---
+
+## 🌐 Deployment
+
+The project is hosted at:  
+👉 [Live Demo](https://offset-frontend-assignment-anas-nad.vercel.app/)
+
+---
+
+
+✅ This project ensures the dashboard remains **clean, user-friendly, and performant**, even when handling large datasets.
