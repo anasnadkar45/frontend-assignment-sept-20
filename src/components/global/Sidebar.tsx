@@ -12,7 +12,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { ModeToggle } from "../ModeToggle"
 
 const Links = [
     {
@@ -87,7 +86,7 @@ const Sidebar = () => {
             </div>
 
             {/* User Profile */}
-            <div className="p-4 border rounded-xl">
+            <div className="p-4 border rounded-xl bg-card">
                 <div className="flex items-center gap-3">
                     <Image
                         src="/Logo.jpg"

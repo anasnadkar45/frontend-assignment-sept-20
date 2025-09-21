@@ -26,6 +26,7 @@ import {
     DialogTitle,
 } from "@/components/ui/dialog"
 import jsPDF from "jspdf"
+import { Skeleton } from "../ui/skeleton"
 
 interface Credit {
     unic_id: string
@@ -43,7 +44,8 @@ const CreditsDashboard = () => {
     const [selectedCredit, setSelectedCredit] = useState<Credit | null>(null)
     const [dialogOpen, setDialogOpen] = useState(false)
     const [sortBy, setSortBy] = useState("")
-    const [order, setOrder] = useState("")
+    const [order, setOrder] = useState("");
+    const [isShow, setIsShow] = useState(false);
 
     const total = sortedCredits.length
     const perPage = 9
@@ -104,7 +106,13 @@ const CreditsDashboard = () => {
         }
 
         setSortedCredits(filteredData)
-    }, [sortBy, order])
+    }, [sortBy, order]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsShow(true)
+        }, 1000)
+    }, [])
 
     // Download Certificate
     const downloadCertificate = (credit: Credit, type: "html" | "pdf") => {
@@ -204,39 +212,46 @@ const CreditsDashboard = () => {
                 {/* Card View */}
                 <TabsContent value="card">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {sortedCredits
-                            .slice(perPage * (currentPage - 1), perPage * currentPage)
-                            .map((credit) => (
-                                <Card key={credit.unic_id}>
-                                    <CardHeader className="flex justify-between">
-                                        <div>
-                                            <CardTitle>{credit.project_name}</CardTitle>
-                                            <Badge
-                                                className={`${credit.status.toLowerCase() === "active"
-                                                    ? "bg-green-500"
-                                                    : "bg-gray-400"
-                                                    }`}
+                        {!isShow ? (
+                            Array.from({ length: 9 }).map((item,idx) => (
+                                <Skeleton className="h-[150px]" key={idx}/>
+                            ))
+                        ) : (
+
+                            sortedCredits
+                                .slice(perPage * (currentPage - 1), perPage * currentPage)
+                                .map((credit) => (
+                                    <Card key={credit.unic_id}>
+                                        <CardHeader className="flex justify-between">
+                                            <div>
+                                                <CardTitle>{credit.project_name}</CardTitle>
+                                                <Badge
+                                                    className={`${credit.status.toLowerCase() === "active"
+                                                        ? "bg-green-500"
+                                                        : "bg-gray-400"
+                                                        }`}
+                                                >
+                                                    {credit.status}
+                                                </Badge>
+                                            </div>
+                                            <Button
+                                                size="icon"
+                                                variant="secondary"
+                                                onClick={() => {
+                                                    setSelectedCredit(credit)
+                                                    setDialogOpen(true)
+                                                }}
                                             >
-                                                {credit.status}
-                                            </Badge>
-                                        </div>
-                                        <Button
-                                            size="icon"
-                                            variant="secondary"
-                                            onClick={() => {
-                                                setSelectedCredit(credit)
-                                                setDialogOpen(true)
-                                            }}
-                                        >
-                                            <Download />
-                                        </Button>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p>Vintage: {credit.vintage}</p>
-                                        <p>ID: {credit.unic_id}</p>
-                                    </CardContent>
-                                </Card>
-                            ))}
+                                                <Download />
+                                            </Button>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p>Vintage: {credit.vintage}</p>
+                                            <p>ID: {credit.unic_id}</p>
+                                        </CardContent>
+                                    </Card>
+                                ))
+                        )}
                     </div>
                 </TabsContent>
 
